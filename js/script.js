@@ -80,9 +80,9 @@ function changeTab(e, tab) {
     document.querySelectorAll(".tab-btn")
         .forEach(btn => btn.classList.remove("active"));
 
-    e.target.classList.add("active");
+    e.target.classList.add("active") ;
 
-    renderJobs();
+    renderJobs() ;
 }
 
-renderJobs();
+renderJobs() ;
