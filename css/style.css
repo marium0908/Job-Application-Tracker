@@ -148,7 +148,15 @@ body {
     cursor: pointer;
 }
 
+/* Empty */
+.empty {
+    text-align: center;
+    margin-top: 40px;
+}
 
+.hidden {
+    display: none;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
