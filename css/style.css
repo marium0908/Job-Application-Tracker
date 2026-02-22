@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f9;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Title */
+.main-title {
+    color: #0f2b4d;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* Dashboard */
+.dashboard {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.card p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.card h2 {
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.green { color: #16a34a; }
+.red { color: #dc2626; }
+
+/* Header */
+.jobs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Tabs */
+.tabs {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 8px 14px;
+    border: none;
+    background: #e5e7eb;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tab-btn.active {
+    background: #2563eb;
+    color: white;
+}
+
+/* Job Card */
+.job-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.job-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.job-card p {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #374151;
+}
+
+.status {
+    background: #e5e7eb;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 6px;
+    margin: 8px 0;
+    font-size: 12px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 13px;
+    background: white;
+}
+
+.interview-btn {
+    color: #16a34a;
+    border-color: #16a34a;
+}
+
+.rejected-btn {
+    color: #dc2626;
+    border-color: #dc2626;
+}
+
+/* Delete */
+.delete-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Empty */
+.empty {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .jobs-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        flex: 1;
+        text-align: center;
+    }
+}
