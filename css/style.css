@@ -171,8 +171,6 @@ body {
     }
 }
 
-
-
 @media (max-width: 480px) {
     .btn {
         flex: 1;
